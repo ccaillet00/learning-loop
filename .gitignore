@@ -1,0 +1,59 @@
+# Persönliche Lernthemen liegen direkt im Projektordner.
+# Neue Themenordner standardmässig ausschliessen; nur Systemordner veröffentlichen.
+/*/
+!/.agents/
+!/.claude/
+!/.gemini/
+!/Vorlagen/
+!/Beispiel/
+!/.github/
+
+# Weitere öffentliche Ordner bei Bedarf oben ausdrücklich freigeben:
+# !/docs/
+# Die Freigaben heben die folgenden Regeln für lokale/private Dateien nicht auf.
+
+# Betriebssystem-Dateien (auch innerhalb veröffentlichter Ordner)
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Lokale Editor-Einstellungen und temporäre Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+*.bak
+*.orig
+*.log
+
+# Zugangsdaten und lokale Umgebungsvariablen
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+
+# Persönliche Agent-Einstellungen und Sitzungsdaten
+**/.claude/settings.local.json
+**/.claude/history.jsonl
+**/.claude/projects/
+**/.claude/sessions/
+**/.gemini/oauth_creds.json
+**/.gemini/google_accounts.json
+**/.gemini/installation_id
+**/.gemini/history/
+**/.gemini/tmp/
+
+# Lokal erzeugte Paketkopien im Repository-Wurzelordner
+/AI-Learning-System.zip
+/learning-loop.zip
+
+# Bereits von Git erfasste Dateien werden durch .gitignore nicht entfernt.

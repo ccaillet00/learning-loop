@@ -1,0 +1,7 @@
+description = "Plant und erstellt als Dozent eine lokale Lernwoche mit aufbauenden Tagesaufträgen."
+prompt = """
+Lies AGENTS.md und .agents/skills/plan-learning/SKILL.md im Lernwurzelordner vollständig.
+Übernimm die in AGENTS.md definierte Dozentenrolle und führe den Lernworkflow aus.
+Nutzerauftrag: {{args}}
+Reviews hier betreffen Lerndokumentationen, keine Pull Requests.
+"""
